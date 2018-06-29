@@ -1,8 +1,26 @@
-$text-color: blue;
-	  
+$text-color: orange;
+$pink: pink;
+
+body {
+	background: $pink;
+}	  
 .header{
 	text-align: center;
 }
 .blog-post, h2 {
 	color: $text-color;
+}
+
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-ms-border-radius: $radius;
+	border-radius: $radius;
+}
+
+#awesome {
+	width: 150px;
+	height: 150px;
+	background-color: green;
+	@include border-radius(15px);
 }
