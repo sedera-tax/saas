@@ -32,9 +32,9 @@ body {
 	.text-#{$j} { font-size: 10px * $j; }  
 }
 
-$colors: (color1: blue, color2: black, color3: red);
+$colors: ("blue": blue, "black": black, "red": red);
 @each $key, $color in $colors {
-	.#{$color}-bg { background-color: $color; width: 100px; height: 100px; }
+	.#{$key}-bg { background-color: $color; width: 100px; height: 100px; }
 }
 
 $x: 1;
